@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="89dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/open_sans"
+        android:onClick="searchImages"
+        android:stateListAnimator="@null"
+        android:text="@string/search_label"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="101dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/map_round"
+        android:fontFamily="@font/open_sans"
+        android:onClick="goToMap"
+        android:stateListAnimator="@null"
+        android:text="@string/mapButton"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/countryList"
+        android:layout_width="396dp"
+        android:layout_height="515dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="277dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="10dp"
+        android:ems="9"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/search_hint"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <Button
+        android:id="@+id/allButton"
+        android:layout_width="205dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/open_sans"
+        android:onClick="toggleFavorites"
+        android:stateListAnimator="@null"
+        android:tag="All"
+        android:text="@string/all_label"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryList" />
+
+    <Button
+        android:id="@+id/favButton"
+        android:layout_width="204dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/open_sans"
+        android:onClick="toggleFavorites"
+        android:stateListAnimator="@null"
+        android:tag="Favorite"
+        android:text="@string/fav_label"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryList" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="119dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/app_name"
+        android:textColor="#8785FF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/globe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/globe"
+        android:layout_width="22dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/globe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

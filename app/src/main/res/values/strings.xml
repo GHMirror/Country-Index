@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Country Index</string>
+    <string name="sort_label">Sort</string>
+    <string name="search_label">Search</string>
+    <string name="search_hint">Search country name</string>
+    <string name="all_label">View all</string>
+    <string name="fav_label">View favorites</string>
+    <string name="star_tag">Star Status</string>
+    <string name="index">Index</string>
+    <string name="capital">Capital</string>
+    <string name="population">Population</string>
+    <string name="currency">Currency</string>
+    <string name="religions">Religion</string>
+    <string name="foods">National dish</string>
+    <string name="area">Area</string>
+    <string name="location">Location</string>
+    <string name="languages">Languages spoken</string>
+    <string name="government">Government</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="mapButton">Explore map</string>
+    <string name="back">Back</string>
+    <string name="viewOnMap">View on map</string>
+</resources>
